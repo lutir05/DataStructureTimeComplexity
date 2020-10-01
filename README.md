@@ -117,8 +117,11 @@ Data Structure Time Complexity
 <td>O(n)</td>
 </tr>
 </table><br>
+
 ## Sorting Algorithm Cheat Sheet
+
 <table>
+ 
 <tr>
 <th rowspan="2">Storting Algorithm Name</th>
 <th colspan="3">Time Complexity</th>
