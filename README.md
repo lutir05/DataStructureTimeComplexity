@@ -104,18 +104,6 @@ Data Structure Time Complexity
 <td>O(logn)</td>
 <td>O(logn)</td>
 </tr>
-  <tr>
-<td><strong>Hash Tables</strong></td>
-<td>N/A</td>
-<td>O(1)</td>
-<td>O(1)</td>
-<td>O(1)</td>
-<td>N/A</td>
-<td>O(n)</td>
-<td>O(n)</td>
-<td>O(n)</td>
-<td>O(n)</td>
-</tr>
 </table><br>
 
 ## Sorting Algorithm Cheat Sheet
