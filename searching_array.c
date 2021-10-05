@@ -1,26 +1,57 @@
-#include<stdio.h>
+/**
+ * C program to search element in array
+ */
+
+#include <stdio.h>
+
+#define MAX_SIZE 100  // Maximum array size
+
 int main()
 {
-	int n,i,ar[100],elem;
-	printf("Enter the number of elements in array\n");
-	scanf("%d",&n);
-	printf("Enter the elements in array\n");
-	for(i=0;i<n;i++)
-	{
-		scanf("%d",&ar[i]);
-	}
-	printf("Enter the element you can search\n");
-	scanf("%d",&elem);
-	for(i=0;i<n;i++)
-	{
-	    if(ar[i]==elem)
-	    {
-	    	printf("%d is present at location %d",elem,i+1);
-	    	break;
-		}
-    else
-    printf("%d is not present in a array\n",elem);
-	break;
+    int arr[MAX_SIZE];
+    int size, i, toSearch, found;
+
+    /* Input size of array */
+    printf("Enter size of array: ");
+    scanf("%d", &size);
+
+    /* Input elements of array */
+    printf("Enter elements in array: ");
+    for(i=0; i<size; i++)
+    {
+        scanf("%d", &arr[i]);
     }
+
+    printf("\nEnter element to search: ");
+    scanf("%d", &toSearch);
+
+    /* Assume that element does not exists in array */
+    found = 0; 
+    
+    for(i=0; i<size; i++)
+    {
+        /* 
+         * If element is found in array then raise found flag
+         * and terminate from loop.
+         */
+        if(arr[i] == toSearch)
+        {
+            found = 1;
+            break;
+        }
+    }
+
+    /*
+     * If element is not found in array
+     */
+    if(found == 1)
+    {
+        printf("\n%d is found at position %d", toSearch, i + 1);
+    }
+    else
+    {
+        printf("\n%d is not found in the array", toSearch);
+    }
+
     return 0;
 }
